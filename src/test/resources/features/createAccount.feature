@@ -6,7 +6,7 @@ Feature: CreateAccount
   Background: login in home page
    Given the 'user' open de navegator
     When the user enter url page
-    Then the should see the principal page
+    Then the should see the principal page 'Sign In'
 
 
   @tag1

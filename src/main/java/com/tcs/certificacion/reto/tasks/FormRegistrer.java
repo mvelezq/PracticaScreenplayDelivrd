@@ -1,5 +1,7 @@
 package com.tcs.certificacion.reto.tasks;
 
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 import com.tcs.certificacion.reto.model.enums.DataRegister;
 import com.tcs.certificacion.reto.userInterfaces.RegisterPage;
 
@@ -15,11 +17,15 @@ public class FormRegistrer implements Task {
 		actor.attemptsTo(Enter.theValue(DataRegister.NAME.getValue()).into(RegisterPage.NAME_INPUT),
 				Enter.theValue(DataRegister.EMAIL.getValue()).into(RegisterPage.EMAIL_INPUT),
 				Enter.theValue(DataRegister.PASSWORD.getValue()).into(RegisterPage.PASSWORD_INPUT),
-				Click.on(RegisterPage.AGREED_TERMS_INPUT)
+				Click.on(RegisterPage.AGREED_TERMS_INPUT),
+				Click.on(RegisterPage.CONFIRM_BUTTON)
 				);
 		
 	}
 
+	public static FormRegistrer complete() {
+		return instrumented(FormRegistrer.class);
+	}
 	
 	
 }

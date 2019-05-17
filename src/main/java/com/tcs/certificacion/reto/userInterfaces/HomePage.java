@@ -12,6 +12,6 @@ public class HomePage extends PageObject {
 	public static final Target EMAIL_INPUT = Target.the("Email de login").locatedBy("//input[@id='UserEmail']");
 	public static final Target PASSWORD_INPUT = Target.the("Password").locatedBy("//input[@id='UserPassword']");
 	public static final Target LOGIN_BUTTON = Target.the("Boton de login").locatedBy("//button[@type='submit']");
-	
+	public static final Target TITTLE_HOME_PAGE = Target.the("Titulo sign in").locatedBy("//h3[@class='form-title']");
 	
 }

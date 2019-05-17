@@ -1,0 +1,219 @@
+<!DOCTYPE html><!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
+Version: 3.3.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+--><!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]--><!--[if !IE]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><!--<![endif]--><!-- BEGIN HEAD --><head>
+<meta charset="utf-8" />
+<title>Inventory Management and Order Management</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta content="Delivrd - Free Inventory Management and Order Fulfillment" name="description" />
+<meta content="" name="author" />
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/plugins/font-awesome/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" /><link rel="stylesheet" type="text/css" href="/app/plugins/switchery/dist/switchery.min.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/plugins/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/plugins/uniform/css/uniform.default.css" /><!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME STYLES -->
+<link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/css/components-md.css" id="style_components" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/css/plugins-md.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/admin/pages/css/login.css?v=0.0.2" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/global/css/plugins.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/admin/layout/css/layout.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/admin/layout/css/themes/delivrd.css" /><link rel="stylesheet" type="text/css" href="/app/theme/Mtro/assets/admin/layout/css/custom.css" /><link rel="stylesheet" type="text/css" href="/app/css/toastr.min.css" />
+
+<script type="text/javascript" async="" src="https://widget.intercom.io/widget/copjsblw"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K6M6R5N"></script><script type="text/javascript">
+var siteUrl = 'https://delivrdapp.com/app/';
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6M6R5N');</script>
+<!-- End Google Tag Manager -->
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/jquery.min.js"></script><script type="text/javascript" src="/app/ajax_validation/js/script.js"></script><style>
+.message { 
+	border-radius: 2px;
+	border-width: 0;
+	background-color: #FFCCCC;
+	border-color: #68caf1;
+	color: black;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18);
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	}
+</style></head>
+<!-- END HEAD -->
+  
+<!-- BEGIN BODY -->
+<body class="login"><div id="ae136b0ce1ae6dc382f2df65c8f891b1">
+
+<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+<div class="menu-toggler sidebar-toggler">
+</div>
+<!-- END SIDEBAR TOGGLER BUTTON -->
+<!-- BEGIN LOGO -->
+<div class="logo">
+	
+</div>
+<!-- END LOGO -->
+<!-- BEGIN LOGIN -->
+<div class="content">
+	<!-- BEGIN LOGIN FORM -->
+	<a href="/">
+	<img src="/theme/Mtro/assets/admin/layout/img/logo_b.png" alt="" />
+	</a>
+	<h3 class="form-title">Sign In</h3>
+		<div class="alert alert-danger display-hide">
+			<button class="close" data-close="alert"></button>
+			<span>
+			Enter any username and password. </span>
+		</div>
+	<form action="/app/users/login" class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><div class="form-group"><label class="control-label visible-ie8 visible-ie9">Username</label><input name="data[User][email]" placeholder="Email Address" class="form-control form-control-solid placeholder-no-fix" maxlength="255" type="email" id="UserEmail" required="required" /></div><div class="form-group"><label class="control-label visible-ie8 visible-ie9">Username</label><input name="data[User][password]" placeholder="password" class="form-control form-control-solid placeholder-no-fix" autocomplete="off" type="password" id="UserPassword" required="required" /></div>			<div class="form-actions">
+			<button type="submit" class="btn btn-primary btn-block uppercase">Log In</button>
+		</div>
+         		<div class="form-actions">
+			<div class="pull-left">
+				<label class="rememberme check">
+							<!--	<input type="hidden" name="data[User][remember]" id="UserRemember_" value="0">
+				<input type="checkbox" name="data[User][remember]" id="UserRemember">Remember me </label> -->
+			</label></div>
+                    
+			<div class="pull-right forget-password-block">
+			 <a href="/app/reset-password" class="forget-password" id="forget-password">Forgot password?</a>			</div>
+                     
+		</div>
+        		<div class="login-options">
+			
+		</div>
+			<div></div>            		<div class="create-account">
+			<p>
+			<a href="/app/register" id="register-btn">Create an account</a>			</p>
+		</div>
+          		</form>			
+  <input type="hidden" name="data[User][return_to]" id="UserReturnTo" />		
+</div>
+<div class="copyright">
+	 2019 © Delivrd</div>
+<!-- END LOGIN -->
+<!-- ae136b0ce1ae6dc382f2df65c8f891b1 -->
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="/app/js/jquery-1.12.4.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/jquery-migrate.min.js"></script><script type="text/javascript" src="/app/js/jquery-ui/jquery-ui.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/jquery.blockui.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/jquery.cokie.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/uniform/jquery.uniform.min.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="/app/js/toastr.min.js"></script>
+<script type="text/javascript" src="/app/plugins/bootbox/bootbox.min.js"></script><!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script type="text/javascript" src="/app/plugins/switchery/dist/switchery.min.js"></script>
+
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="/app/theme/Mtro/assets/global/scripts/metronic.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/admin/layout/scripts/layout.js"></script><script type="text/javascript" src="/app/theme/Mtro/assets/admin/layout/scripts/demo.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(document).ready(function() {
+  Metronic.init(); // init metronic core components
+  Layout.init(); // init current layout
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61652601-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+$('#e-commerce').change(function() {
+  console.log($("#e-commerce").attr('checked'));
+  if ($("#e-commerce").attr('checked') == undefined){
+    $('#user_stores').hide();
+  }
+  else if($("#e-commerce").attr('checked') == 'checked') {
+    $('#user_stores').show();
+  }
+});
+
+$("#fullfilling_order").submit(function (e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+    var $btn = $('#signup').button('Loading ...');
+
+    $.ajax({
+        type: 'POST',
+        url: siteUrl + 'firststep',
+        data: formData,
+        dataType: 'json',
+        contentType: false,
+        processData: false,
+        success: function (response) {
+            var messageType = (response.status == true) ? 'alert' : 'danger';
+
+            var message = '&lt;div class="alert alert-' + messageType + '"&gt;&lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;×&lt;/span&gt;&lt;/button&gt;' + response.message + '&lt;/div&gt;';
+
+            if (response.status == false) {
+                toastr['error'](response.message);
+                $btn.button('reset');
+            } else {
+                if(response.url !== undefined) {
+                    window.location = response.url;
+                } else {
+                    window.location = '/app/';
+                }
+            }
+
+        }
+    });
+    return false;
+});
+
+$('#show-password').click(function() {
+    if ($(this).is(':checked')) {
+        $('#password').attr('type', 'text');
+    } else {
+        $('#password').attr('type', 'password');
+    }
+});
+function camelcase(inputstring) {
+    var a = inputstring.split('_'), i;
+    s = [];
+    for (i = 0; i &lt; a.length; i++) {
+        s.push(a[i].charAt(0).toUpperCase() + a[i].substring(1));
+    }
+    s = s.join('');
+    return s;
+}
+</script>
+
+<script>
+window.intercomSettings = {
+app_id: "copjsblw",
+name: "",
+email: "", 
+created_at: "",
+low_alerts: "",
+invited: ""
+
+};
+
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/copjsblw';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+ <!-- END JAVASCRIPTS -->
+
+<!-- END BODY -->
+
+</div></body></html>
